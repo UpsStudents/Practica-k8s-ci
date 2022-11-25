@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: react
-        image: bncc111/react
+        image: bncc111/react:latest
         resources:
           limits:
             memory: "128Mi"

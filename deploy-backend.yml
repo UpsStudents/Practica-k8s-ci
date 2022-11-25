@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: backend
-        image: bncc111/backend
+        image: bncc111/backend:latest
+        imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "128Mi"
