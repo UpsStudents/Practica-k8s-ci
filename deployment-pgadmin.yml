@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: pgadmin4
-          image: dpage/pgadmin4        
+          image: dpage/pgadmin4
+          magePullPolicy: IfNotPresent
           envFrom:
             - secretRef:
                 name: pgadmin-secret
