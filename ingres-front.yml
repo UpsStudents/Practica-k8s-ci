@@ -6,7 +6,7 @@ metadata:
     name: myingress
 spec:
   rules:
-  - host: kubernetes.example.com
+  - host: insuasti-cisneros.info
     http:
       paths:
       - pathType: Prefix
@@ -16,3 +16,10 @@ spec:
             name: react-service
             port: 
               number: 80
+      - pathType: Prefix
+        path: "/pgadmin4"
+        backend:
+          service:
+            name: pgadmin-service
+            port: 
+              number: 8080
