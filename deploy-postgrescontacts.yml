@@ -15,7 +15,7 @@ spec:
       containers:
       - name: postgrescontacts
         image: postgres
-        magePullPolicy: IfNotPresent
+        imagePullPolicy: IfNotPresent
         envFrom:
           - secretRef:
               name: postgres-secret
