@@ -11,10 +11,12 @@ spec:
     metadata:
       labels:
         app: react
+        env: test
     spec:
       containers:
       - name: react
         image: bncc111/react:latest
+        imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "128Mi"
